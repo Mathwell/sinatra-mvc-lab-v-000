@@ -9,6 +9,6 @@ class App < Sinatra::Base
   post '/' do
   text_from_user = params[:user_text]
   @text_piglatinized=PigLatinizer.new(text_from_user)
-  erb :results
+  erb :piglatinized
 end
 end
