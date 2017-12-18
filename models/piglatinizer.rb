@@ -14,12 +14,9 @@ class PigLatinizer
    new_word
  end
 
-   def starts_with_consonant?(word)
-     if "bcdfghjklmnpqrstvwxyz".include?(word[0])
-       return true
-     else
-       return false
-     end
+   def to_pig_latin(phrase)
+     arr=phrase.split(" ")
+     new_phrase=arr.map {|word| word.piglatinize}.join(" ")    
    end
 
 
