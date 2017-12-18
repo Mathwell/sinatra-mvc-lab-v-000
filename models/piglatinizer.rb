@@ -1,6 +1,8 @@
 class PigLatinizer
+  attr_reader phrase
 
-  def initialize
+  def initialize(text_from_user)
+    @phrase=text_from_user
   end
 
   def piglatinize(word)
@@ -18,7 +20,4 @@ class PigLatinizer
      arr=phrase.split(" ")
      new_phrase=arr.map {|word| piglatinize(word)}.join(" ")
    end
-
-
-
 end
