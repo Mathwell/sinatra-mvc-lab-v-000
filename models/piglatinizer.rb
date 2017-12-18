@@ -11,6 +11,8 @@ class PigLatinizer
    else
      new_word=word+"way"
    end
+   new_word
+ end
 
    def starts_with_consonant?(word)
      if "bcdfghjklmnpqrstvwxyz".include?(word[0])
@@ -20,6 +22,6 @@ class PigLatinizer
      end
    end
 
-  end
+
 
 end
