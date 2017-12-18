@@ -5,7 +5,7 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-   if "bcdfghjklmnpqrstvwxyz".include?(word[0])
+   if "bcdfghjklmnpqrstvwxyz".include?(word[0].downcase)
     arr=word.split(/[aeoui]/)
     cons=arr.shift
     new_word=word[cons.length..word.length-1]+cons+"ay"
