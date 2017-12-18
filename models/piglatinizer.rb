@@ -7,7 +7,7 @@ class PigLatinizer
    if "bcdfghjklmnpqrstvwxyz".include?(word[0])
     arr=word.split(/[aeoui]/)
     cons=arr.shift
-    new_word=arr.to_s+cons+"ay"
+    new_word=word[1..-cons.length]+cons+"ay"
    else
      new_word=word+"way"
    end
